@@ -49,6 +49,8 @@ services:
       - "8000:8000"
     environment:
       DATABASE_URL: postgres://basic_user:basic_password@db:5432/challenge
+    networks:
+      - fullstack-challenge_default
 
   frontend:
     build:
@@ -59,6 +61,8 @@ services:
       - "3000:3000"
     depends_on:
       - backend
+    networks:
+      - fullstack-challenge_default
 
 volumes:
   postgres_data:

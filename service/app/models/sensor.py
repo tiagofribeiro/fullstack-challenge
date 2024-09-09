@@ -7,22 +7,18 @@ Base = declarative_base()
 
 class SensorReading(Base):
     __tablename__ = 'sensor_readings'
-    id = Column(Integer, primaryKey=True, index=True)
+    id = Column(Integer, primary_key=True, index=True)
     equipment_id = Column(String, index=True)
     timestamp = Column(TIMESTAMP(timezone=True))
     reading_value = Column(Numeric(10,2))
 
-
 class SensorReadingSchema(BaseModel):
-    equipment_id: str
+    equipmentId: str
     timestamp: datetime
-    value: str
+    value: float
 
-class SensorReadingCreate(SensorReadingSchema):
+class SensorReadingInsert(SensorReadingSchema):
     pass
 
 class SensorReadingResponse(SensorReadingSchema):
-    id: int
-
-    class Config:
-        orm_mode = True
+    pass
