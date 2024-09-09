@@ -1,11 +1,23 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.v1.routes import router as sensor_router
 from app.utils.errors import custom_error_handler
 
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app.include_router(sensor_router)
 app.add_exception_handler(HTTPException, custom_error_handler)
 
