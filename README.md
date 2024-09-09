@@ -17,3 +17,7 @@
 - [Frontend Documentation](https://github.com/tiagofribeiro/fullstack-challenge/blob/main/client/README.md) (`localhost:3000`)
 
 - [Backend Documentation](https://github.com/tiagofribeiro/fullstack-challenge/blob/main/service/README.md) (`localhost:8000`)
+
+- [Figma Sketches](https://www.figma.com/board/CP3FEARcryhcxQmg0CWMMw/RadixChallenge?node-id=0-1&t=MSkV0NvrQnq0OkHN-1)
+
+- [More projects (wip)](https://tgfr.com.br)
