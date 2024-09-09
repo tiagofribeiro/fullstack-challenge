@@ -1,0 +1,14 @@
+node_modules
+build
+*.log
+*.md
+.git
+.gitignore
+
+yarn-error.log
+yarn-debug.log
+npm-debug.log
+
+src/tests
+src/*.test.js
+src/*.spec.js
