@@ -9,7 +9,7 @@
 
 ## How to run
 1. Make sure you have [Docker](https://docs.docker.com/engine/install/) installed.
-2. Run `docker compose up` on a terminal in the root of the `services` folder.
+2. Run `docker compose up` on a terminal in the root of the `fullstack-challenge` folder.
 3. Check Docker Desktop > Containers or run `docker ps` to see if all containers are running.
 
 <br>
