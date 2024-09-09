@@ -7,7 +7,13 @@
 
 <br>
 
-- [Frontend Documentation](https://github.com/tiagofribeiro/fullstack-challenge/blob/main/client/README.md)
+## How to run
+1. Make sure you have [Docker](https://docs.docker.com/engine/install/) installed.
+2. Run `docker compose up` on a terminal in the root of the `services` folder.
+3. Check Docker Desktop > Containers or run `docker ps` to see if all containers are running.
+
 <br>
 
-- [Backend Documentation](https://github.com/tiagofribeiro/fullstack-challenge/blob/main/service/README.md)
+- [Frontend Documentation](https://github.com/tiagofribeiro/fullstack-challenge/blob/main/client/README.md) (`localhost:3000`)
+
+- [Backend Documentation](https://github.com/tiagofribeiro/fullstack-challenge/blob/main/service/README.md) (`localhost:8000`)
